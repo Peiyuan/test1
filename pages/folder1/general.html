@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">asdfasdfa</h1>
+    </div>
+    <div class="col-lg-12">
+        <p>sdfasdfasdfasdf</p>
+        <p>adsfasdfasdfasdfasdfsadf</p>
+    </div>
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>1. t3</h4>
+            </div>
+            <div class="panel-body">
+                <img src="../img/fb-home-top.png">
+                <p>asdfsadfasdf</p>
+                <p>asdfasdfasdf</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>2. t4</h4>
+            </div>
+            <div class="panel-body">
+                <img src="../img/fb-home-latest.png">
+                <p>asdfasdfasdfaf</p>
+                <p><strong>- Drag & Drop Zone</strong></p>
+                <pre><code>
+                    public List<ValueMap> getParsysComponentList(Page currentPage, String componentName) {
+                        List<ValueMap> componentList = new ArrayList<ValueMap>();
+                        if (currentPage != null && StringUtils.isNotBlank(componentName)) {
+                            Resource pageResource = currentPage.getContentResource();
+                            ResourceResolver resourceResolver = pageResource.getResourceResolver();
+                            ResourceTreeIterator iterator = new ResourceTreeIterator(resourceResolver,
+                                    pageResource.getPath(), new ResourceTreeIterator.Components());
+                            while (iterator.hasNext()) {
+                                Resource curComponent = iterator.next();
+                                if (StringUtils.containsIgnoreCase(curComponent.getName(), componentName)) {
+                                    componentList.add(curComponent.adaptTo(ValueMap.class));
+                                }
+                            }
+                        }
+                        return componentList;
+                    }
+                </code></pre>
+            </div>
+        </div>
+    </div>
+</div>
